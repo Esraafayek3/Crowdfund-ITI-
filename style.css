@@ -21,7 +21,7 @@ body {
 /* Navbar */
 .navbar {
   display: flex;
-  justify-content: space-between; /* اللوجو يسار واللينكات يمين */
+  justify-content: space-between; 
   align-items: center;
   padding: 15px 30px;
   background-color: #f8f9fa;
@@ -44,19 +44,17 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-left: auto; /* تزقهم لآخر النافبار */
 }
 
 .nav-links a {
   text-decoration: none;
-  padding: 8px 15px;
   border-radius: 5px;
   transition: all 0.3s ease;
   color: #444;
   font-weight: 500;
 }
 
-/* زر الموبايل */
+
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
@@ -86,15 +84,27 @@ body {
   background-color: var(--secondery-color);
 }
 
-/* زر القائمة للهاتف */
+
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
 }
 
-/* ========== */
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  color: #444;
+  font-weight: 500;
+}
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -185,7 +195,7 @@ main {
 
 .content {
   display: flex;
-  flex-direction: column; /* ✅ نخلي العناصر تحت بعض */
+  flex-direction: column; 
   align-items: center;
   gap: 10px;
 }
@@ -275,7 +285,6 @@ main {
   object-fit: cover;
 }
 
-/* ✅ ريسبونسيف */
 @media (max-width: 768px) {
   .hero {
     padding: 40px 15px;
@@ -311,68 +320,7 @@ main {
 .card-text p {
   color: #6c6b6b;
 }
-/* .cards {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
 
-.card {
-  position: relative;
-  height: 300px;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
- .card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.card p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  width: 100%;
-  padding: 10px 15px;
-  z-index: 2;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}  */
-
-/* الحاوية الرئيسية للكامبينز */
 #myCampaignsList {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -380,7 +328,7 @@ main {
   margin-top: 20px;
 }
 
-/* الكارت */
+
 .card {
   background: #fdfdfd;
   border-radius: 12px;
@@ -394,7 +342,7 @@ main {
   transform: translateY(-5px);
 }
 
-/* صورة الكامبين */
+
 .card img {
   width: 100%;
   height: 180px;
@@ -402,7 +350,7 @@ main {
   display: block;
 }
 
-/* محتوى الكارت */
+
 .card-content {
   padding: 15px;
 }
@@ -450,7 +398,7 @@ main {
   background: #c0392b;
 }
 
-/* جدول التبرعات */
+
 .pledges-table {
   width: 100%;
   border-collapse: collapse;
@@ -644,7 +592,6 @@ footer {
   padding-top: 15px;
 }
 
-/* ✅ شاشات لابتوب وتابلت */
 @media (max-width: 1200px) {
   .footer-left,
   .footer-right {
@@ -656,7 +603,7 @@ footer {
   }
 }
 
-/* ✅ شاشات تابلت متوسطة (600px–900px) */
+
 @media (max-width: 900px) {
   footer {
     flex-direction: column;
@@ -681,7 +628,7 @@ footer {
   }
 }
 
-/* ✅ موبايل صغير (<600px) */
+
 @media (max-width: 600px) {
   .footer-right {
     flex-direction: column;
@@ -694,7 +641,7 @@ footer {
   }
 }
 /* login */
-/* تنسيقات خاصة بصفحة تسجيل الدخول / التسجيل */
+
 .auth-container {
   display: flex;
   justify-content: center;
@@ -790,164 +737,7 @@ footer {
   color: #222;
   outline: none;
 }
-
-/* Styles for create-campaign.html */
-/* .form-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-
-.campaign-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-.campaign-form input[type="text"],
-.campaign-form input[type="number"],
-.campaign-form input[type="date"],
-.campaign-form textarea {
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.reward-item {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.add-btn {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 1rem;
-}
-
-.add-btn:hover {
-    background-color: #218838;
-}
-
-.remove-reward-btn {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-} */
-
-/* .form-wrapper {
-  background: #fff;
-  width: 100%;
-  max-width: 600px;
-  padding: 30px 25px;
-  border-radius: 12px;
-  margin: 20px auto;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-}
-
-.form-wrapper h3 {
-  text-align: center;
-  margin-bottom: 25px;
-  color: #444;
-}
-
-.campaign-form h4 {
-  margin: 20px 0 10px;
-  color: #444;
-} */
-
-/* Form Groups */
-/* .form-group {
-  margin-bottom: 18px;
-}
-
-.form-group label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #444;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  transition: 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #eeee;
-  outline: none;
-  box-shadow: 0 0 5px #dddd;
-} */
-
-/* Buttons */
-/* button {
-  margin-bottom: 15px;
-  display: inline-block;
-  cursor: pointer;
-  font-size: 1rem;
-  border: none;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.add-btn {
-  background: var(--primary-color);
-  color: white;
-  padding: 10px 15px;
-  margin-bottom: 20px;
-}
-
-.add-btn:hover {
-  background: var(--secondery-color);
-}
-
-.submit-btn {
-  background: var(--primary-color);
-  color: white;
-  padding: 12px 20px;
-  font-weight: 600;
-}
-
-.submit-btn:hover {
-background: var(--secondery-color);
-} */
-
-/* Responsive */
-/* @media (max-width: 768px) {
-  .form-wrapper {
-    padding: 20px 15px;
-  }
-
-  .navbar .logo {
-    font-size: 1.2rem;
-  }
-} */
-
+/* create camppaign  */
 /* Layout */
 .layout {
   display: flex;
@@ -1044,7 +834,7 @@ background: var(--secondery-color);
   color: #2c3e50;
   outline: none;
   transition: 0.3s;
-  appearance: none; /* hide default arrow */
+  appearance: none;
   cursor: pointer;
   background-image: url("data:image/svg+xml;utf8,<svg fill='%232c3e50' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
   background-repeat: no-repeat;
@@ -1154,7 +944,6 @@ button {
   }
 }
 
-/* styles for user-dashboard */
 
 /* Styles for user-dashboard.html */
 .dashboard-container {
@@ -1329,7 +1118,7 @@ button {
   }
 }
 
-/* user-dashboard */
+
 /* Dashboard Container */
 .navbar-links {
   display: flex;
@@ -1763,7 +1552,7 @@ p.card-title {
 }
 
 /* styles for edit campaign  */
-/* Modal (background) */
+
 .modal {
   display: none;
   position: fixed;
@@ -1898,7 +1687,7 @@ p.card-title {
 .payment-container h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #fc6e62; /* أزرق هادي */
+  color: #fc6e62; 
 }
 
 .payment-container p {
