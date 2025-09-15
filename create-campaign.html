@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a Campaign - CrowdFund</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <!-- Left Column -->
+      <div class="left-column">
+        <div class="left-content">
+          <a href="index.html" class="home">CrowdFund</a>
+          <h2>Let’s begin your fundraising journey</h2>
+          <p>We’re here to guide you every step of the way.</p>
+        </div>
+      </div>
+
+      <!-- Right Column (Form) -->
+      <div class="right-column">
+        <div class="form-wrapper">
+          <h3>Launch Your Campaign</h3>
+          <form
+            id="create-campaign-form"
+            class="campaign-form"
+            enctype="multipart/form-data"
+          >
+            <!-- Campaign Title -->
+            <div class="form-group">
+              <label for="campaign-title">Campaign Title:</label>
+              <input
+                type="text"
+                id="campaign-title"
+                name="campaign-title"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="campaign-description">Description:</label>
+              <textarea
+                id="campaign-description"
+                name="campaign-description"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="category">Category:</label>
+              <select id="category" required>
+                <option value="">Choose a category</option>
+                <option value="arts">Arts</option>
+                <option value="education">Education</option>
+                <option value="health">Health</option>
+                <option value="technology">Technology</option>
+                <option value="environment">Environment</option>
+                <option value="community">Community</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="campaign-goal">Funding Goal ($):</label>
+                <input
+                  type="number"
+                  id="campaign-goal"
+                  name="campaign-goal"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="campaign-deadline">Deadline:</label>
+                <input
+                  type="date"
+                  id="campaign-deadline"
+                  name="campaign-deadline"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="campaign-image-input">Campaign Image:</label>
+              <input type="file" id="campaign-image-input" accept="image/*" />
+            </div>
+
+            <h4>Rewards (Optional)</h4>
+            <div id="rewards-container"></div>
+            <button type="button" id="add-reward-btn" class="add-btn">
+              Add Reward
+            </button>
+
+            <button type="submit" class="submit-btn">Create Campaign</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="create-campaign.js"></script>
+  </body>
+</html>

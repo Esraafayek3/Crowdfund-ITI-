@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <h2>display data</h2>
+    <input type="text" id="searchBox" placeholder="Search by title..." />
+
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Body</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div id="pagination"></div>
+    <button onclick="showCreateForm()">+ Add New Post</button>
+
+    <!-- form -->
+    <div id="formContainer">
+      <h3 id="formTitle">Form</h3>
+      <input type="hidden" id="postId" />
+      <p>Title: <input type="text" id="postTitle" /></p>
+      <p>Body: <input type="text" id="postBody" /></p>
+      <button onclick="savePost()">Save</button>
+      <button onclick="cancelForm()">Cancel</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

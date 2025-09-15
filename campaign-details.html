@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campaign Details - CrowdFund</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <a href="index.html" class="logo">CrowdFund</a>
+          <div class="navbar-links">
+            <a href="index.html" id="logout-btn">HomePage</a>
+            <a href="user-dashboard.html">Your Impact</a>
+          </div>
+        </nav>
+      </header>
+      <main class="layout campaign-details-layout">
+        <div class="campaign-image-container">
+          <img
+            id="campaign-image"
+            src=""
+            alt="Campaign Image"
+            class="campaign-image"
+          />
+        </div>
+        <div class="campaign-info">
+          <h1 id="campaign-title"></h1>
+          <p id="campaign-description"></p>
+          <div class="stats-container">
+            <p>
+              <strong>Funding Goal:</strong> <span id="campaign-goal"></span>
+            </p>
+            <p>
+              <strong>Amount Raised:</strong> <span id="campaign-raised"></span>
+            </p>
+            <p>
+              <strong>Deadline:</strong> <span id="campaign-deadline"></span>
+            </p>
+          </div>
+          <div id="rewards-list">
+            <h3>Rewards</h3>
+          </div>
+          <button id="pledge-button" class="pledge-btn donate">
+            <a href="payment.html">Pledge Now!</a>
+          </button>
+        </div>
+      </main>
+    </div>
+    <script src="campaign-details.js"></script>
+  </body>
+</html>

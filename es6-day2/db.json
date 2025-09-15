@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": "10",
+      "name": "khaled",
+      "age": 20
+    },
+    {
+      "id": "20",
+      "name": "Ahmed",
+      "age": 25
+    },
+    {
+      "id": "30",
+      "name": "hana",
+      "age": 26
+    }
+  ],
+  "Products": [
+    {
+      "id": "1",
+      "productName": "Pepsi"
+    },
+    {
+      "id": "5",
+      "productName": "product1",
+      "cost": 20
+    },
+    {
+      "id": "26a3",
+      "productName": "product2",
+      "cost": 20
+    },
+    {
+      "id": "e17c",
+      "productid": 3,
+      "producttitel": "qui est esse",
+      "productdiscription": "et iusto sed quo iure voluptatem occaecati omnis eligendi aut ad voluptatem doloribus vel accusantium quis pariatur molestiae porro eius odio et labore et velit aut"
+    },
+    {
+      "id": "4f91",
+      "productid": 3,
+      "producttitel": "qui est esse",
+      "productdiscription": "et iusto sed quo iure voluptatem occaecati omnis eligendi aut ad voluptatem doloribus vel accusantium quis pariatur molestiae porro eius odio et labore et velit aut"
+    },
+    {
+      "id": "acea",
+      "productid": 3,
+      "producttitel": "qui est esse",
+      "productdiscription": "et iusto sed quo iure voluptatem occaecati omnis eligendi aut ad voluptatem doloribus vel accusantium quis pariatur molestiae porro eius odio et labore et velit aut"
+    }
+  ]
+}

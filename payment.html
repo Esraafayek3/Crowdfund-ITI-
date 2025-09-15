@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <a href="index.html" class="logo">CrowdFund</a>
+          <div class="navbar-links">
+            <a href="index.html" id="logout-btn">HomePage</a>
+            <a href="user-dashboard.html">Your Impact</a>
+          </div>
+        </nav>
+      </header>
+      <main class="payment-container">
+        <h2>Payment</h2>
+        <p id="payment-info"></p>
+
+        <form id="payment-form">
+          <div class="form-group">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" required />
+          </div>
+          <div class="form-group">
+            <label for="expiry">Expiry Date</label>
+            <input type="text" id="expiry" placeholder="MM/YY" required />
+          </div>
+          <div class="form-group">
+            <label for="cvc">CVC</label>
+            <input type="text" id="cvc" required />
+          </div>
+          <button type="submit" class="submit">Pay Now</button>
+        </form>
+      </main>
+    </div>
+    <script src="payment.js"></script>
+  </body>
+</html>

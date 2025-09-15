@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">CrowdFund</a>
+      </nav>
+    </header>
+
+    <main class="auth-container">
+      <div class="form-wrapper">
+        <h3>Sign in to your account</h3>
+        <form id="login-form" class="auth-form">
+          <div class="form-group">
+            <label for="login-email">Email address</label>
+            <input type="email" id="login-email" required />
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" required />
+          </div>
+          <button type="submit" class="submit-btn">Sign in</button>
+        </form>
+        <p>
+          Don't have an account?
+          <a href="register.html">Create a new account</a>
+        </p>
+      </div>
+    </main>
+
+    <script src="login.js"></script>
+  </body>
+</html>

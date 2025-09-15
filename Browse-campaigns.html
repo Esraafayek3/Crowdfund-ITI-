@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Campaigns - CrowdFund</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <a href="index.html" class="logo">CrowdFund</a>
+          <div class="navbar-links">
+            <a href="create-campaign.html" id="create-campaigns-link"
+              >Create Campaign</a
+            >
+            <a href="user-dashboard.html" id="dashboard-link">Your Impact</a>
+            <a href="#" id="logout-btn">Sign out</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="browse-container">
+        <div class="browse-header">
+          <h1>Browse Campaigns</h1>
+          <div class="search-bar">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search for a campaign..."
+            />
+            <button id="search-btn">Search</button>
+          </div>
+          <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="arts">Arts</button>
+            <button class="filter-btn" data-category="education">
+              Education
+            </button>
+            <button class="filter-btn" data-category="health">Health</button>
+            <button class="filter-btn" data-category="technology">
+              Technology
+            </button>
+            <button class="filter-btn" data-category="environment">
+              Environment
+            </button>
+            <button class="filter-btn" data-category="community">
+              Community
+            </button>
+          </div>
+        </div>
+        <div id="campaigns-list" class="campaigns-grid">
+          <p id="no-results-message" style="display: none">
+            No matching results found.
+          </p>
+        </div>
+      </main>
+
+      <main class="intro-section">
+        <h1>JOIN US IN MAKING A DIFFERENCE TODAY</h1>
+        <p>
+          Discover various campaigns and initiatives designed to create a
+          lasting positive impact in communities worldwide.
+        </p>
+        <!-- Section 2 -->
+        <section>
+          <!-- <div class="campaigns-header">
+            <h2>Join Our Campaigns and Make a Difference</h2>
+          </div> -->
+
+          <div class="campaigns-grid">
+            <div class="campaign-card">
+              <img
+                src="images/dfbabbdd-710d-4a2e-a0af-88365343859b.jpeg"
+                alt="Community"
+              />
+              <div class="content">
+                <h3>Supporting Local Communities</h3>
+                <p>
+                  Our initiatives empower local communities through education,
+                  health, and sustainable development practices.
+                </p>
+                <button class="view-btn donate">
+                  <a href="payment.html">Donate Now</a>
+                </button>
+              </div>
+            </div>
+
+            <div class="campaign-card">
+              <img
+                src="images/be306da4-372b-4194-87d7-fd353dce5a74.jpeg"
+                alt="Environment"
+              />
+              <div class="content">
+                <h3>Environmental Conservation Efforts</h3>
+                <p>
+                  Protecting our planet for future generations. Our campaigns
+                  focus on reforestation, clean oceans, and eco-friendly
+                  practices.
+                </p>
+                <button class="view-btn donate">
+                  <a href="payment.html">Donate Now</a>
+                </button>
+              </div>
+            </div>
+
+            <div class="campaign-card">
+              <img
+                src="images/eff458e2-6d89-44ed-8b6d-df3a738afb6e.jpeg"
+                alt="Education"
+              />
+              <div class="content">
+                <h3>Education for Underprivileged Children</h3>
+                <p>
+                  Your support helps us build schools, provide supplies, and
+                  create equal opportunities for children worldwide.
+                </p>
+                <button class="view-btn donate">
+                  <a href="payment.html">Donate Now</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <!-- Left Side -->
+        <div class="footer-left">
+          <h2>Join Our Cause, Make a Difference Today!</h2>
+          <button class="donate"><a href="payment.html">Donate Now</a></button>
+        </div>
+
+        <!-- Right Side -->
+        <div class="footer-right">
+          <div class="footer-column">
+            <h3>ABOUT</h3>
+            <ul>
+              <li>Our Mission</li>
+              <li>Impact</li>
+              <li>Team</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>CAMPAIGNS</h3>
+            <ul>
+              <li>Current</li>
+              <li>Past</li>
+              <li>Upcoming</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>SUPPORT</h3>
+            <ul>
+              <li>FAQ</li>
+              <li>Contact</li>
+              <li>Volunteer</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+          COPYRIGHT © 2025 impacthub. All rights reserved. | PRIVACY POLICY |
+          TERMS OF SERVICE
+        </div>
+      </footer>
+    </div>
+    <script src="browse-campaigns.js"></script>
+  </body>
+</html>
