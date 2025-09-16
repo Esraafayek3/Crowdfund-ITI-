@@ -4,15 +4,23 @@ document.addEventListener("DOMContentLoaded", async () => {
   const searchBtn = document.getElementById("search-btn");
   const filterButtons = document.querySelectorAll(".filter-btn");
   const noResultsMessage = document.getElementById("no-results-message");
-  const logoutBtn = document.getElementById("logout-btn"); // العناصر الجديدة
+  const logoutBtn = document.getElementById("logout-btn");
   const navbarLinks = document.querySelector(".navbar-links");
   const userDashboardLink = document.getElementById("dashboard-link");
   const createcampaignslink = document.getElementById("create-campaigns-link");
 
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("navbar-links");
+
+  if (toggle && navLinks) {
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  }
+
   const API_BASE_URL = "http://localhost:5000";
   let allCampaigns = [];
 
-  // الكود الجديد: التحقق من صلاحيات المستخدم
   const loggedInUser = JSON.parse(localStorage.getItem("user"));
   if (loggedInUser && loggedInUser.role === "admin") {
     const adminLink = document.createElement("a");
@@ -53,9 +61,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         campaignCard.href = `campaign-details.html?id=${campaign.id}`;
 
         campaignCard.innerHTML = `
-          <img src="${campaign.base64Image || "placeholder.jpg"}" alt="${
-          campaign.title
-        }">
+<img src="${campaign.base64Image || "placeholder.jpg"}" alt="${campaign.title}">
           <div class="overlay"></div>
           <div class="card-content">
             <p class="card-title">${campaign.title}</p>

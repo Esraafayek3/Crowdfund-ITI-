@@ -2,6 +2,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const campaignId = urlParams.get("id");
 
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("navbar-links");
+
+  if (toggle && navLinks) {
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  }
+
   if (!campaignId) {
     alert("Campaign not found.");
     window.location.href = "index.html";

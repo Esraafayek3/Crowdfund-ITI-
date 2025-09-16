@@ -8,6 +8,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   const pledgesTableBody = document.querySelector("#pledges-table tbody");
   const noPledgesMessage = document.getElementById("no-pledges-message");
 
+  const toggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("navbar-links");
+
+  if (toggle && navLinks) {
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  }
+
   const API_BASE_URL = "http://localhost:5000";
 
   const editModal = document.getElementById("edit-modal");
@@ -170,7 +179,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       );
       closeEditModal();
 
-
       const updatedCampaignsResponse = await fetch(
         `${API_BASE_URL}/campaigns?creatorId=${loggedInUser.id}`
       );
@@ -178,7 +186,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       displayCampaigns(updatedUserCampaigns);
     } catch (error) {
       console.error("Error submitting edit request:", error);
-    
     }
   });
 
